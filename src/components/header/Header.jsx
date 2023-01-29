@@ -1,12 +1,12 @@
 import { Cart, Menu } from "../../svg-component";
 import { StyledCartSpan, StyledCartSubSpan, StyledHeader, StyledLogo, StyledParentDiv } from "./StylesHeader";
 import logo from '../../assets/images/logo.png'
-import { MainContainer } from "../../StyledApp";
+import { HeaderMainContainer } from "../../StyledApp";
 
 const Header = ({ open, setOpen }) => {
     return (
         <StyledHeader>
-            <MainContainer scroll={true}>
+            <HeaderMainContainer>
                 <StyledParentDiv>
                     <Menu handleOpen={() => setOpen(true)} />
                     <StyledLogo src={logo} alt="logo" />
@@ -17,7 +17,7 @@ const Header = ({ open, setOpen }) => {
                         </StyledCartSubSpan>
                     </StyledCartSpan>
                 </StyledParentDiv>
-            </MainContainer>
+            </HeaderMainContainer>
         </StyledHeader>
     )
 }
