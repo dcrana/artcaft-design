@@ -1,4 +1,4 @@
-import { HandPaintingParentDiv, HandPaintingWrapper, StyledHandPaintImage, StyledPaintCardMaterial, StyledPaintCardTitle, StyledPaintCardYear, StyledPaintingCard, StyledPaintingWrapper, StyleSendRequest, StylesPaintCardYear } from "./StyledHandPainting"
+import { HandPaintingParentDiv, HandPaintingWrapper, StyledHandPaintImage, StyledPaintCardMaterial, StyledPaintCardTitle, StyledPaintCardYear, StyledPaintingCard, StyledPaintingWrapper, StyleSendRequest } from "./StyledHandPainting"
 import TitleWrapper from "../titlewrapper/TitleWrapper";
 import { MainContainer } from "../../StyledApp";
 import { handPaintingData } from "../../data";
@@ -23,7 +23,7 @@ const HandPainting = () => {
                                             {item?.year}
                                         </StyledPaintCardYear>
                                         <StyledPaintCardMaterial>
-                                          Material : {item?.material}
+                                            Material : {item?.material}
                                         </StyledPaintCardMaterial>
                                         <StyleSendRequest>
                                             SEND REQUEST

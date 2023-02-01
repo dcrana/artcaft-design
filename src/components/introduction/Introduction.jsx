@@ -1,6 +1,6 @@
 import { MainContainer } from "../../StyledApp";
 import TitleWrapper from "../titlewrapper/TitleWrapper";
-import { IntroductionParentDiv, IntroductionWrapper, StyledContent, StyledIntroParaOne, StyledIntroParaTwo, StyledTitleWrapper, StyledWelcomeText, StylesIntroHeading } from "./StyledIntroduction";
+import { IntroductionParentDiv, IntroductionWrapper, StyledContent, StyledIntroParaOne, StyledIntroParaTwo } from "./StyledIntroduction";
 
 const Introduction = () => {
     return (
