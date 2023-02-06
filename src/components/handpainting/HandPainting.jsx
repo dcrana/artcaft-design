@@ -6,7 +6,7 @@ import { handPaintingData } from "../../data";
 
 const HandPainting = () => {
     return (
-        <HandPaintingWrapper>
+        <HandPaintingWrapper id="handpainting">
             <HandPaintingParentDiv>
                 <MainContainer>
                     <TitleWrapper floatRight={false} title="Handpainting" subtitle=" Acrylic painting" />
