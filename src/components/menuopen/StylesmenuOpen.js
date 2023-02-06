@@ -13,7 +13,7 @@ export const StyledMenuWrapper = styled.div`
     position:fixed;
     top:0px;
     left:0px;
-    z-index:1;
+    z-index:12;
     @media only screen and (min-width: 768px) {
     }
 ` 

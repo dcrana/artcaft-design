@@ -4,7 +4,7 @@ import bannerBG from '../../assets/images/bannerBG.png'
 
 
 export const BannerSectionWrapper = styled.section`
-  // position:relative
+   /* position:relative; */
 `;
 
 export const StylesBannerWrapper = styled.div`
@@ -18,7 +18,7 @@ export const StylesBannerWrapper = styled.div`
   flex-direction:column;
   height:771px;
   width:100%;
-  // position:relative;
+ position:relative;
 `;
 
 

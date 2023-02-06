@@ -5,7 +5,9 @@ width:100%;
 height:150px;
 // max-width:1250px;
 margin:auto;
-position:absolute; top:35px;
+position:absolute; 
+top:35px;
+z-index: 11;
 background:transparent;
 
 `;
