@@ -6,7 +6,7 @@ import { StlyesFBLink, StlyesInstaLink } from "../banner/StylesBanner";
 
 const CustomArt = () => {
     return (
-        <CustomArtWrapper>
+        <CustomArtWrapper id="customart">
             <CustomArtParentDiv>
                 <MainContainer>
                     <StyledCustomArtHeading>
@@ -77,10 +77,10 @@ const CustomArt = () => {
                     <StylesHr />
                     <StyledCopyRightWrapper>
                         <StyledCopyRight>
-                        @2020 ArtbyRaff
+                            @2020 ArtbyRaff
                         </StyledCopyRight>
                         <StyledDesigner>
-                        ❤️ Designed and developed by Appsandmore24
+                            ❤️ Designed and developed by Appsandmore24
                         </StyledDesigner>
                     </StyledCopyRightWrapper>
                 </MainContainer>
