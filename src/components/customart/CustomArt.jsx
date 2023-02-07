@@ -44,6 +44,7 @@ const CustomArt = () => {
                             <StyleSendRequestButton>
                                 SEND REQUEST
                             </StyleSendRequestButton>
+                            <input type="date" placeholder="21-20-2022" />
                         </StyledCheckboxSubmitWrapper>
                     </StyledFormParagraphDiv>
                     <StyledSignatureDiv>

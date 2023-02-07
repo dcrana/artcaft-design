@@ -14,8 +14,6 @@ export const StyledMenuWrapper = styled.div`
     top:0px;
     left:0px;
     z-index:12;
-    @media only screen and (min-width: 768px) {
-    }
 ` 
 
 
@@ -26,9 +24,7 @@ export const StyledMenuInnerWrapper = styled.div`
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
-    padding:30px 0px;
-    @media only screen and (min-width: 768px) {
-    }
+    padding:30px 0px 30px 0px;
 ` 
 
 export const StyledCloseWrapper = styled.div`
@@ -41,6 +37,7 @@ export const StyledCloseWrapper = styled.div`
     top:5%;
     left:3%;
     cursor:pointer;
+
     @media only screen and (min-width: 768px) {
       top:10%;
       left:10%;
@@ -54,6 +51,7 @@ export const StyledMenulist = styled.div`
     align-items:center;
     width:100%;
     flex-wrap:wrap; 
+
     @media only screen and (min-width: 768px) {
       flex-direction:row;
     }
@@ -64,9 +62,11 @@ export const StyledLink = styled.a`
   color:transparent;
   -webkit-text-stroke: 1px var(--white-1);
   font-weight:var(--font-bold);
+
   &:hover{
     color:var(--white-2);
   }
+
   &:hover::before{
     content: "";
     height:7px;
@@ -75,8 +75,9 @@ export const StyledLink = styled.a`
     background-color:#d8cf91;
     margin:0px 5px 12.5px 0px;
   }
+  
   @media only screen and (min-width: 768px) {
-    margin-right:50px;
+    margin:0px 50px 0px 0px;
   }
 `
 
@@ -89,7 +90,7 @@ export const StyledFBInstaIconsWrapper = styled.div`
 `
 export const StlyesFBLink = styled.a`
   text-decoration:none;
-  cursor:pointer
+  cursor:pointer;
 `
 export const StlyesInstaLink = styled.a`
   text-decoration:none;

@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import bannerBG from '../../assets/images/bannerBG.png'
 
-
-
 export const BannerSectionWrapper = styled.section`
-   /* position:relative; */
 `;
 
 export const StylesBannerWrapper = styled.div`
@@ -18,7 +15,7 @@ export const StylesBannerWrapper = styled.div`
   flex-direction:column;
   height:771px;
   width:100%;
- position:relative;
+  position:relative;
 `;
 
 
@@ -28,6 +25,7 @@ export const StyledBannerSubHeading = styled.h2`
   font-size:var(--sixteen);
   font-weight:normal;
   text-align:center;
+
   @media only screen and (min-width: 768px) {
     font-size:var(--twentytwo);
   }
@@ -39,8 +37,9 @@ export const StyledBannerHeading = styled.h1`
   color:var(--yellow-1);
   font-size:52px;
   font-weight:normal;
-  margin-top:26px;
+  margin:26px 0px 0px 0px;
   text-align:center;
+
   @media only screen and (min-width: 768px) {
     font-size:var(--font-bigfontsize);
   }
@@ -53,12 +52,13 @@ export const AboutMeButton = styled.button`
   border-radius:25px;
   color:var(--white-1);
   font-weight:normal;
-  width:280px;
+  max-width:280px;
+  width: 100%;
   height:60px;  
   text-align:center;  
-  margin-top:42px;
+  margin:42px 0px 0px 0px;
   background-color:transparent;
-  cursor:pointer
+  cursor:pointer;
 `;
 
 export const StyledFBInstaIconsWrapper = styled.div`
@@ -74,12 +74,12 @@ export const StyledFBInstaIconsWrapper = styled.div`
 `
 export const StlyesFBLink = styled.a`
   text-decoration:none;
-  cursor:pointer
+  cursor:pointer;
 `
 export const StlyesInstaLink = styled.a`
   text-decoration:none;
   cursor:pointer;
-  margin-top:10px;
+  margin:10px 0px 0px 0px;
 `
 
 

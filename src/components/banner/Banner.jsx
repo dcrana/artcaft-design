@@ -1,6 +1,15 @@
 import { Facebook, Instagram } from "../../svg-component";
 import ScrollBottom from "../scrollbottom/ScrollBottom";
-import { AboutMeButton, BannerSectionWrapper, StlyesFBLink, StlyesInstaLink, StyledBannerHeading, StyledBannerSubHeading, StyledFBInstaIconsWrapper, StylesBannerWrapper } from "./StylesBanner";
+import {
+    AboutMeButton,
+    BannerSectionWrapper,
+    StlyesFBLink,
+    StlyesInstaLink,
+    StyledBannerHeading,
+    StyledBannerSubHeading,
+    StyledFBInstaIconsWrapper,
+    StylesBannerWrapper,
+} from "./StylesBanner";
 
 const Banner = () => {
     return (
@@ -9,19 +18,19 @@ const Banner = () => {
                 <StyledBannerSubHeading>
                     Technique in which pigments are mixed with hot
                 </StyledBannerSubHeading>
-                <StyledBannerHeading>
-                    Acrylic painting
-                </StyledBannerHeading>
-                <AboutMeButton >
-                    About Me
-                </AboutMeButton>
+                <StyledBannerHeading>Acrylic painting</StyledBannerHeading>
+                <AboutMeButton>About Me</AboutMeButton>
                 <StyledFBInstaIconsWrapper>
-                    <StlyesFBLink href="https://www.facebook.com" target="_blank"><Facebook /></StlyesFBLink>
-                    <StlyesInstaLink href="https://www.instagra.com" target="_blank" ><Instagram /></StlyesInstaLink>
+                    <StlyesFBLink href="https://www.facebook.com" target="_blank">
+                        <Facebook />
+                    </StlyesFBLink>
+                    <StlyesInstaLink href="https://www.instagra.com" target="_blank">
+                        <Instagram />
+                    </StlyesInstaLink>
                 </StyledFBInstaIconsWrapper>
-            <ScrollBottom />
+                <ScrollBottom />
             </StylesBannerWrapper>
         </BannerSectionWrapper>
-    )
-}
+    );
+};
 export default Banner;

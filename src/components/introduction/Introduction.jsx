@@ -7,14 +7,6 @@ const Introduction = () => {
         <IntroductionWrapper id="introduction">
             <IntroductionParentDiv>
                 <MainContainer>
-                    {/* <StyledTitleWrapper>
-                        <StyledWelcomeText>
-                            Welcome
-                        </StyledWelcomeText>
-                        <StylesIntroHeading>
-                            Introduction
-                        </StylesIntroHeading>
-                    </StyledTitleWrapper> */}
                     <TitleWrapper floatRight={true} title="Introduction" subtitle="Welcome" />
                     <StyledContent>
                         <StyledIntroParaOne>

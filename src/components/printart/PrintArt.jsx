@@ -3,7 +3,17 @@ import { printArtData } from "../../data";
 import { MainContainer } from "../../StyledApp";
 import { Cart } from "../../svg-component";
 import TitleWrapper from "../titlewrapper/TitleWrapper";
-import { PrintArtParentDiv, PrintArtWrapper, StyledAddToCart, StyledPaintArtWrapper, StyledPrintartCard, StyledPrintArtCardMaterial, StyledPrintArtCardPrice, StyledPrintArtCardTitle, StyledPrintArtImage } from "./StyledPrintArt"
+import {
+    PrintArtParentDiv,
+    PrintArtWrapper,
+    StyledAddToCart,
+    StyledPaintArtWrapper,
+    StyledPrintartCard,
+    StyledPrintArtCardMaterial,
+    StyledPrintArtCardPrice,
+    StyledPrintArtCardTitle,
+    StyledPrintArtImage,
+} from "./StyledPrintArt";
 
 const PrintArt = () => {
     const [value, setValue] = useState(-1);
@@ -11,10 +21,15 @@ const PrintArt = () => {
         <PrintArtWrapper id="paintart">
             <PrintArtParentDiv>
                 <MainContainer>
-                    <TitleWrapper floatRight={true} title="Print Art" subtitle="Acrylic Prints" left='-10px' />
+                    <TitleWrapper
+                        floatRight={true}
+                        title="Print Art"
+                        subtitle="Acrylic Prints"
+                        left="-10px"
+                    />
                     <StyledPaintArtWrapper>
-                        {
-                            printArtData.length > 0 && printArtData.map((item, index) => {
+                        {printArtData.length > 0 &&
+                            printArtData.map((item, index) => {
                                 return (
                                     <StyledPrintartCard key={index}>
                                         <StyledPrintArtImage src={item?.image} alt={item?.title} />
@@ -27,17 +42,21 @@ const PrintArt = () => {
                                         <StyledPrintArtCardMaterial>
                                             Material : {item?.material}
                                         </StyledPrintArtCardMaterial>
-                                        <StyledAddToCart onMouseEnter={() => setValue(item?.id)} onMouseLeave={() => { setValue(-1) }}>
-                                            <Cart fillColor={item?.id === value ? "#000" : '#fff'} />
+                                        <StyledAddToCart
+                                            onMouseEnter={() => setValue(item?.id)}
+                                            onMouseLeave={() => {
+                                                setValue(-1);
+                                            }}
+                                        >
+                                            <Cart fillColor={item?.id === value ? "#000" : "#fff"} />
                                         </StyledAddToCart>
                                     </StyledPrintartCard>
-                                )
-                            })
-                        }
+                                );
+                            })}
                     </StyledPaintArtWrapper>
                 </MainContainer>
             </PrintArtParentDiv>
         </PrintArtWrapper>
-    )
-}
+    );
+};
 export default PrintArt;
