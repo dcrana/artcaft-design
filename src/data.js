@@ -95,3 +95,31 @@ export const printArtData = [
         id:7
     },
 ]
+
+export const sectionData = [
+    {
+        title: 'About Me',
+        link: 'banner',
+        id: 0
+    },
+    {
+        title: 'Introduction',
+        link: 'introduction',
+        id: 1
+    },
+    {
+        title: 'Hand Painting',
+        link: 'handpainting',
+        id: 2
+    },
+    {
+        title: 'Paint Art',
+        link: 'paintart',
+        id: 3
+    },
+    {
+        title: 'Custom Art',
+        link: 'customart',
+        id: 4
+    },
+]
